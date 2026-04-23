@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 
 const HERO_STATS = [
   { v: "4.5+", l: "Years Experience", c: "text-blue-muted" },
-  { v: "10+", l: "Major Projects", c: "text-cyan" },
+  { v: "20+", l: "Major Projects", c: "text-cyan" },
   { v: "3", l: "Companies", c: "text-white" },
   { v: "90+", l: "Lighthouse Score", c: "text-green" },
 ];
@@ -98,9 +98,9 @@ export function HeroSection() {
                 max-sm:text-[13.5px]
               `}
             >
-              Fullstack Developer specializing in the JavaScript/TypeScript ecosystem. I architect scalable
-              backend systems, design robust APIs, and deliver pixel-perfect user interfaces — from database
-              design to CI/CD deployment.
+              Fullstack Developer specializing in the JavaScript/TypeScript ecosystem. I architect scalable backend
+              systems, design robust APIs, and deliver pixel-perfect user interfaces — from database design to CI/CD
+              deployment.
             </p>
           </MotionHeroItem>
 
@@ -132,9 +132,7 @@ export function HeroSection() {
                 <div className="size-2.5 rounded-full bg-red" />
                 <div className="size-2.5 rounded-full bg-amber" />
                 <div className="size-2.5 rounded-full bg-green" />
-                <span className="ml-1.5 flex-1 font-mono text-[10px] text-white/20">
-                  profile · cao-dang-tinh
-                </span>
+                <span className="ml-1.5 flex-1 font-mono text-[10px] text-white/20">profile · cao-dang-tinh</span>
                 <span className="flex items-center gap-1 font-mono text-[10.5px] text-green">
                   <span className="inline-block size-[7px] animate-pulse rounded-full bg-green" />
                   Available for hire
