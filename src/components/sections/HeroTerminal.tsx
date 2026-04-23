@@ -23,22 +23,22 @@ export function HeroTerminal() {
       <div className="flex size-full items-center justify-center">
         <div
           className={`
-            w-full overflow-hidden rounded-2xl border border-white/10 bg-white/[.04]
-            max-lg:max-w-[520px]
+            w-full overflow-hidden rounded-2xl border border-white/10 bg-white/4
+            max-lg:max-w-130
           `}
         >
-          <div className="flex items-center gap-1.5 border-b border-white/[.07] bg-black/45 px-[15px] py-3">
+          <div className="flex items-center gap-1.5 border-b border-white/[.07] bg-black/45 px-3.75 py-3">
             <div className="size-2.5 rounded-full bg-red" />
             <div className="size-2.5 rounded-full bg-amber" />
             <div className="size-2.5 rounded-full bg-green" />
             <span className="ml-1.5 flex-1 font-mono text-[10px] text-white/20">profile · cao-dang-tinh</span>
             <span className="flex items-center gap-1 font-mono text-[10.5px] text-green">
-              <span className="inline-block size-[7px] animate-pulse rounded-full bg-green" />
+              <span className="inline-block size-1.75 animate-pulse rounded-full bg-green" />
               Available for hire
             </span>
           </div>
           <div className="p-4">
-            <div className="mb-3 grid grid-cols-2 gap-0.5 overflow-hidden rounded-lg bg-white/[.05]">
+            <div className="mb-3 grid grid-cols-2 gap-0.5 overflow-hidden rounded-lg bg-white/5">
               {HERO_STATS.map((kpi) => (
                 <div key={kpi.l} className="bg-[rgba(10,21,32,.6)] px-3 py-3.5">
                   <div
@@ -57,7 +57,7 @@ export function HeroTerminal() {
               <div
                 key={row.l}
                 className={`
-                  flex items-center justify-between border-b border-white/[.04] bg-white/[.03] px-3 py-[9px]
+                  flex items-center justify-between border-b border-white/4 bg-white/3 px-3 py-2.25
                   last:border-none
                 `}
               >
