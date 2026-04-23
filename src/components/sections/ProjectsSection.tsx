@@ -20,26 +20,6 @@ const PROJECTS = [
     accent: "border-cyan",
   },
   {
-    title: "JobRocky",
-    category: "AI SaaS Platform",
-    description:
-      "All-in-one career platform featuring an AI-powered CV Builder with 20+ customizable templates and color themes, AI Mock Interview with real-time feedback scoring, and Video Interview recording for job preparation. Supports multi-step onboarding and Stripe-based subscription tiers.",
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "OpenAI API", "Supabase", "Stripe"],
-    image: "/projects/jobrocky.png",
-    demo: "https://www.jobrocky.com/templates",
-    accent: "border-amber",
-  },
-  {
-    title: "Đạo Tràng Ảo",
-    category: "AI Application",
-    description:
-      "Virtual Dharma Hall — an AI-powered Buddhist learning platform where users converse with an assistant trained on eminent Masters' teachings. Features bilingual Vietnamese/English chat, voice recognition with AI-generated voice responses, and transparent source citations from Buddhist scriptures.",
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "AI/RAG", "Voice AI", "Supabase"],
-    image: "/projects/daotrang.png",
-    demo: "https://daotrang.net/en",
-    accent: "border-amber",
-  },
-  {
     title: "TestArchitect UI Mapify",
     category: "Browser Extension",
     description:
@@ -58,6 +38,16 @@ const PROJECTS = [
     image: "/projects/testarchitect-cloud.png",
     demo: "https://cloud.testarchitect.com",
     accent: "border-green",
+  },
+  {
+    title: "Đạo Tràng Ảo",
+    category: "AI Application",
+    description:
+      "Virtual Dharma Hall — an AI-powered Buddhist learning platform where users converse with an assistant trained on eminent Masters' teachings. Features bilingual Vietnamese/English chat, voice recognition with AI-generated voice responses, and transparent source citations from Buddhist scriptures.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "AI/RAG", "Voice AI", "Supabase"],
+    image: "/projects/daotrang.png",
+    demo: "https://daotrang.net/en",
+    accent: "border-amber",
   },
   {
     title: "The Binary Network",
@@ -107,6 +97,16 @@ const PROJECTS = [
     image: "/projects/hotpotgpt.png",
     demo: "https://hotpotgpt.com/",
     accent: "border-cyan",
+  },
+  {
+    title: "JobRocky",
+    category: "AI SaaS Platform",
+    description:
+      "All-in-one career platform featuring an AI-powered CV Builder with 20+ customizable templates and color themes, AI Mock Interview with real-time feedback scoring, and Video Interview recording for job preparation. Supports multi-step onboarding and Stripe-based subscription tiers.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "OpenAI API", "Supabase", "Stripe"],
+    image: "/projects/jobrocky.png",
+    demo: "https://www.jobrocky.com/templates",
+    accent: "border-amber",
   },
 ];
 
