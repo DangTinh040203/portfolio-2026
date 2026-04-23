@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef } from "react";
-import { type HTMLMotionProps, motion, useReducedMotion, type Variants } from "framer-motion";
+import { type HTMLMotionProps, m, useReducedMotion, type Variants } from "framer-motion";
 
 const variants: Variants = {
   hidden: { opacity: 0, y: 32 },
@@ -25,7 +25,7 @@ export const MotionSection = forwardRef<HTMLDivElement, Props>(function MotionSe
 
   if (as === "section") {
     return (
-      <motion.section
+      <m.section
         ref={ref as React.Ref<HTMLElement>}
         variants={variants}
         initial={prefersReduced ? "visible" : "hidden"}
@@ -34,12 +34,12 @@ export const MotionSection = forwardRef<HTMLDivElement, Props>(function MotionSe
         {...rest}
       >
         {children}
-      </motion.section>
+      </m.section>
     );
   }
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       variants={variants}
       initial={prefersReduced ? "visible" : "hidden"}
@@ -48,6 +48,6 @@ export const MotionSection = forwardRef<HTMLDivElement, Props>(function MotionSe
       {...rest}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 });

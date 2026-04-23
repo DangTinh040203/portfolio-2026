@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef } from "react";
-import { type HTMLMotionProps, motion, useReducedMotion, type Variants } from "framer-motion";
+import { type HTMLMotionProps, m, useReducedMotion, type Variants } from "framer-motion";
 
 const BASE_DELAY = 0.06;
 
@@ -30,7 +30,7 @@ export const MotionItem = forwardRef<HTMLDivElement, Props>(function MotionItem(
   const prefersReduced = useReducedMotion();
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       custom={index}
       variants={variants}
@@ -40,6 +40,6 @@ export const MotionItem = forwardRef<HTMLDivElement, Props>(function MotionItem(
       {...rest}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 });

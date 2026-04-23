@@ -138,8 +138,12 @@ export function ProjectsSection() {
                 <div className="relative aspect-[16/9] overflow-hidden bg-surface-alt">
                   <Image
                     src={project.image}
-                    alt={project.title}
+                    alt={`Screenshot of ${project.title} — ${project.category}`}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    quality={75}
+                    priority={i < 2}
+                    loading={i < 2 ? "eager" : "lazy"}
                     className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />

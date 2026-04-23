@@ -17,7 +17,7 @@ export function Section({ children, variant = "white", className = "", id }: Sec
     <section
       id={id}
       className={`
-        px-10 py-24
+        contain-content px-10 py-24
         max-md:px-8 max-md:py-[72px]
         max-sm:px-5 max-sm:py-14
         ${VARIANT_MAP[variant]}

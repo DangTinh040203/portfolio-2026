@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef } from "react";
-import { type HTMLMotionProps, motion, useReducedMotion, type Variants } from "framer-motion";
+import { type HTMLMotionProps, m, useReducedMotion, type Variants } from "framer-motion";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -34,7 +34,7 @@ export const MotionHero = forwardRef<HTMLDivElement, ContainerProps>(function Mo
 
   if (triggerOnScroll) {
     return (
-      <motion.div
+      <m.div
         ref={ref}
         variants={containerVariants}
         initial={prefersReduced ? "visible" : "hidden"}
@@ -43,12 +43,12 @@ export const MotionHero = forwardRef<HTMLDivElement, ContainerProps>(function Mo
         {...rest}
       >
         {children}
-      </motion.div>
+      </m.div>
     );
   }
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       variants={containerVariants}
       initial={prefersReduced ? "visible" : "hidden"}
@@ -56,7 +56,7 @@ export const MotionHero = forwardRef<HTMLDivElement, ContainerProps>(function Mo
       {...rest}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 });
 
@@ -65,8 +65,8 @@ export const MotionHeroItem = forwardRef<HTMLDivElement, HTMLMotionProps<"div">>
   ref,
 ) {
   return (
-    <motion.div ref={ref} variants={itemVariants} {...rest}>
+    <m.div ref={ref} variants={itemVariants} {...rest}>
       {children}
-    </motion.div>
+    </m.div>
   );
 });

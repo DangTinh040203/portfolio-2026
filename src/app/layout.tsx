@@ -1,18 +1,19 @@
 import { DM_Mono, DM_Sans, Fraunces } from "next/font/google";
 import type { Metadata, Viewport } from "next";
+import { MotionProvider } from "@/components/motion";
 import "./globals.css";
 
 const dmSans = DM_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
 const fraunces = Fraunces({
   variable: "--font-serif",
   subsets: ["latin"],
-  weight: ["300", "600", "700", "800"],
+  weight: ["300", "600", "700"],
   display: "swap",
 });
 
@@ -67,6 +68,34 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Cao Dang Tinh",
+  url: SITE_URL,
+  jobTitle: "Fullstack Developer",
+  worksFor: {
+    "@type": "Organization",
+    name: "Freelance",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Ho Chi Minh City",
+    addressCountry: "VN",
+  },
+  sameAs: ["https://github.com/DangTinh040203"],
+  knowsAbout: [
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "NestJS",
+    "TypeScript",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -74,6 +103,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`
           ${dmSans.variable}
@@ -82,7 +117,7 @@ export default function RootLayout({
           scrollbar-none antialiased
         `}
       >
-        {children}
+        <MotionProvider>{children}</MotionProvider>
       </body>
     </html>
   );
