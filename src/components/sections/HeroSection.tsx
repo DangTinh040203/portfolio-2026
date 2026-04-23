@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 
 const HERO_STATS = [
   { v: "4.5+", l: "Years Experience", c: "text-blue-muted" },
-  { v: "6+", l: "Major Projects", c: "text-cyan" },
+  { v: "10+", l: "Major Projects", c: "text-cyan" },
   { v: "3", l: "Companies", c: "text-white" },
   { v: "90+", l: "Lighthouse Score", c: "text-green" },
 ];

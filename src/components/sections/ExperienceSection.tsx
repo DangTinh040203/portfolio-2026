@@ -10,8 +10,7 @@ const EXPERIENCES = [
     company: "Agest Vietnam",
     role: "Fullstack Developer",
     description: [
-      "Led end-to-end development for the TestArchitect platform — scalable backend architectures with responsive React/Next.js frontends.",
-      "Designed RESTful APIs and microservices, optimizing database queries and data processing pipelines.",
+      "Led end-to-end development for the TestArchitect platform — scalable Frontend architectures with responsive React/Next.js frontends.",
       "Collaborated with cross-functional teams on system requirements, database schemas, and API integrations.",
       "Maintained strict code quality with ESLint/Prettier, clean code principles, and rigorous code reviews.",
     ],
@@ -36,7 +35,7 @@ const EXPERIENCES = [
   {
     period: "08/2021 — 11/2023",
     company: "RockyStudio",
-    role: "Web Developer · Project Contract",
+    role: "Fullstack Developer",
     description: [
       "Developed and optimized real-time full-stack applications with seamless user experiences.",
       "Refactored legacy codebases to improve maintainability, rendering speed, and security.",
@@ -55,11 +54,10 @@ export function ExperienceSection() {
       <SectionHeading>
         Where I&apos;ve
         <br />
-        <span className="text-blue">Made Impact.</span>
+        <span className="text-cyan">Made Impact.</span>
       </SectionHeading>
       <SectionSubtitle>
-        Building production systems across enterprise SaaS, Web3 infrastructure, and real-time
-        applications.
+        Building production systems across enterprise SaaS, Web3 infrastructure, and real-time applications.
       </SectionSubtitle>
 
       <div className="relative space-y-6">
@@ -83,19 +81,14 @@ export function ExperienceSection() {
                 `}
               >
                 <div className="mb-1 flex items-center gap-3 max-sm:flex-col max-sm:items-start max-sm:gap-1">
-                  <span className="font-mono text-[11px] tracking-wider text-mid uppercase">
-                    {exp.period}
-                  </span>
+                  <span className="font-mono text-[11px] tracking-wider text-mid uppercase">{exp.period}</span>
                 </div>
                 <h3 className="mb-0.5 text-[20px] font-bold text-navy">{exp.company}</h3>
                 <p className="mb-4 text-[14px] font-medium text-blue">{exp.role}</p>
 
                 <ul className="mb-4 space-y-2">
                   {exp.description.map((point, j) => (
-                    <li
-                      key={j}
-                      className="flex gap-2 text-[14px] leading-[1.7] text-slate"
-                    >
+                    <li key={j} className="flex gap-2 text-[14px] leading-[1.7] text-slate">
                       <span className="mt-[7px] inline-block size-1.5 shrink-0 rounded-full bg-mid/40" />
                       {point}
                     </li>

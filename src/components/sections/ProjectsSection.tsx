@@ -12,61 +12,101 @@ const PROJECTS = [
     title: "CV Craft",
     category: "AI Application",
     description:
-      "AI-powered professional CV builder — features JD Matching analysis with RAG, real-time Mock Interview with AI via WebSocket, free PDF export and full resume management.",
+      "Full-stack AI-powered CV builder with RAG-based JD Matching that analyzes resumes against job descriptions, real-time Mock Interview via WebSocket streaming, ATS-optimized PDF export, and a complete resume management dashboard. Built with server-side rendering and a microservice architecture.",
     tech: ["Next.js", "NestJS", "TypeScript", "Prisma", "PostgreSQL", "Google Gemini AI", "WebSocket", "Docker"],
     image: "/projects/cv-craft.png",
     demo: "https://cv-builder.site",
     github: "https://github.com/DangTinh040203/rag-cv-builder",
-    accent: "border-blue",
+    accent: "border-cyan",
   },
   {
-    title: "TestArchitect Cloud",
-    category: "SaaS Platform",
+    title: "JobRocky",
+    category: "AI SaaS Platform",
     description:
-      "Powerful no-code automation platform to accelerate testing, boost collaboration, and deliver higher-quality releases without writing code.",
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "Redux", "Spring Boot", "K8S", "AWS"],
-    image: "/projects/testarchitect-cloud.png",
-    demo: "https://cloud.testarchitect.com",
-    accent: "border-cyan",
+      "All-in-one career platform featuring an AI-powered CV Builder with 20+ customizable templates and color themes, AI Mock Interview with real-time feedback scoring, and Video Interview recording for job preparation. Supports multi-step onboarding and Stripe-based subscription tiers.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "OpenAI API", "Supabase", "Stripe"],
+    image: "/projects/jobrocky.png",
+    demo: "https://www.jobrocky.com/templates",
+    accent: "border-amber",
+  },
+  {
+    title: "Đạo Tràng Ảo",
+    category: "AI Application",
+    description:
+      "Virtual Dharma Hall — an AI-powered Buddhist learning platform where users converse with an assistant trained on eminent Masters' teachings. Features bilingual Vietnamese/English chat, voice recognition with AI-generated voice responses, and transparent source citations from Buddhist scriptures.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "AI/RAG", "Voice AI", "Supabase"],
+    image: "/projects/daotrang.png",
+    demo: "https://daotrang.net/en",
+    accent: "border-amber",
   },
   {
     title: "TestArchitect UI Mapify",
     category: "Browser Extension",
     description:
-      "Chrome extension for automation testers — auto-generates CSS/XPath locators, streamlining Page Object Model workflows and eliminating manual coding.",
+      "Chrome extension for QA automation — inspects web pages to auto-generate CSS/XPath locators with AI-powered suggestions, streamlines Page Object Model workflows, supports bulk element mapping, and exports directly to test automation frameworks, eliminating hours of manual locator coding.",
     tech: ["TypeScript", "TailwindCSS", "OpenAI API", "Webpack", "Vite.js"],
     image: "/projects/testarchitect-ui-mapify.png",
     demo: "https://testarchitect.com/product/testarchitect-ui-mapify",
     accent: "border-amber",
   },
   {
-    title: "The Binary Network",
-    category: "Web3 Ecosystem",
+    title: "TestArchitect Cloud",
+    category: "SaaS Platform",
     description:
-      "Web 2.5 infrastructure platform integrating blockchain into telco and banking apps. Enables millions to use dApps via daily apps, powered by the $BNRY token.",
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "Express.js", "Solidity"],
-    image: "/projects/binary-network.png",
-    demo: "https://network.thebinaryholdings.com/",
+      "Enterprise-grade no-code test automation platform used by QA teams globally. Built the frontend with complex state management for test case editing, real-time collaboration via WebSocket, cloud execution dashboards with live status tracking, and a responsive design system supporting 50+ UI components.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Redux", "Spring Boot", "K8S", "AWS"],
+    image: "/projects/testarchitect-cloud.png",
+    demo: "https://cloud.testarchitect.com",
     accent: "border-green",
   },
   {
-    title: "The Binary Holdings",
+    title: "The Binary Network",
+    category: "Web3 Ecosystem",
+    description:
+      "Web 2.5 infrastructure platform embedding blockchain capabilities into national-scale telco and banking apps across Asia, Africa, and the Middle East. Integrates the $BNRY token economy, on-chain rewards and airdrops, wallet management, and a regulatory-compliant settlement layer.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "Express.js", "Solidity"],
+    image: "/projects/binary-network.png",
+    demo: "https://network.thebinaryholdings.com/",
+    accent: "border-cyan",
+  },
+  {
+    title: "The Binary Holdings Landing",
     category: "Web3 Landing Page",
     description:
-      "High-performance landing page for a Web3 ecosystem — focused on Growth Engineering with technical SEO, structured data, and conversion optimization.",
+      "High-performance landing page engineered for Growth — implements structured data (JSON-LD), Open Graph optimization, Core Web Vitals scoring 90+, and conversion funnels driving investor and partner acquisition for the Web3 ecosystem.",
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Shadcn UI", "Framer Motion", "Supabase"],
     image: "/projects/binary-holdings.png",
     demo: "https://www.thebinaryholdings.com/",
-    accent: "border-blue",
+    accent: "border-cyan",
   },
   {
     title: "The Binary Holdings CRM",
     category: "Admin Tools",
     description:
-      "Specialized CRM system managing data and user growth metrics for the Web3 Ecosystem. Centralized database for admin control, metrics tracking, and content management.",
+      "Internal CRM system for the Web3 ecosystem — centralized dashboard for user growth analytics, content management, admin RBAC controls, quota management for AI chat/voice features, and real-time metrics tracking across multiple product lines.",
     tech: ["Next.js", "TailwindCSS", "Shadcn", "Supabase", "Better Auth", "MySQL"],
     isInternal: true,
     accent: "border-soft",
+  },
+  {
+    title: "HackNative",
+    category: "Web3 Community",
+    description:
+      "Web3 hackathon platform connecting builders, mentors, and sponsors. Features hackathon creation & management, team formation workflows, project submission & judging systems, community channels via Discord/Telegram integration, and a leaderboard showcasing top blockchain builders.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "Web3"],
+    image: "/projects/hacknative.png",
+    demo: "https://www.hacknative.com/",
+    accent: "border-green",
+  },
+  {
+    title: "HotPotGPT",
+    category: "AI SaaS Platform",
+    description:
+      "Multi-agent AI chat platform supporting GPT-4, Claude, and custom AI agents. Features project-based conversation management, built-in agent templates (YouTube Writer, Cold Email, Pro Coder), file attachments, and Stripe-powered subscription billing with usage-based quotas.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "OpenAI API", "Supabase", "Stripe"],
+    image: "/projects/hotpotgpt.png",
+    demo: "https://hotpotgpt.com/",
+    accent: "border-cyan",
   },
 ];
 
@@ -77,11 +117,10 @@ export function ProjectsSection() {
       <SectionHeading>
         Things I&apos;ve
         <br />
-        <span className="text-blue">Built.</span>
+        <span className="text-cyan">Built.</span>
       </SectionHeading>
       <SectionSubtitle>
-        From AI-powered SaaS to Web3 infrastructure — production applications serving real users
-        at scale.
+        From AI-powered SaaS to Web3 infrastructure — production applications serving real users at scale.
       </SectionSubtitle>
 
       <div className="grid grid-cols-2 gap-5 max-lg:grid-cols-1">
@@ -149,16 +188,11 @@ export function ProjectsSection() {
                   </div>
                 </div>
 
-                <p className="mb-4 text-[13.5px] leading-[1.7] text-slate">
-                  {project.description}
-                </p>
+                <p className="mb-4 text-[13.5px] leading-[1.7] text-slate">{project.description}</p>
 
                 <div className="flex flex-wrap gap-1.5">
                   {project.tech.map((t) => (
-                    <span
-                      key={t}
-                      className="rounded-md bg-surface-alt px-2 py-0.5 text-[11px] font-medium text-slate"
-                    >
+                    <span key={t} className="rounded-md bg-surface-alt px-2 py-0.5 text-[11px] font-medium text-slate">
                       {t}
                     </span>
                   ))}
