@@ -1,6 +1,6 @@
 import { Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { HeroTerminal } from "./HeroTerminal";
+import { HeroTerminalLazy } from "./HeroTerminalLazy";
 
 export function HeroSection() {
   return (
@@ -11,10 +11,10 @@ export function HeroSection() {
         bg-[linear-gradient(160deg,#0a1520_0%,#07101a_60%,#040d14_100%)] px-10 pt-[88px] pb-20
         before:pointer-events-none before:absolute before:inset-0
         before:bg-[linear-gradient(rgba(255,255,255,.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.025)_1px,transparent_1px)]
-        before:[mask-image:radial-gradient(ellipse_85%_90%_at_55%_45%,#000_20%,transparent_75%)]
-        before:bg-[length:52px_52px]
+        before:mask-[radial-gradient(ellipse_85%_90%_at_55%_45%,#000_20%,transparent_75%)]
+        before:bg-size-[52px_52px]
         max-md:min-h-0 max-md:px-8 max-md:py-16
-        max-sm:px-5 max-sm:py-[52px]
+        max-sm:px-5 max-sm:py-[52px] md:h-screen
       `}
     >
       {/* Glow effects */}
@@ -39,7 +39,10 @@ export function HeroSection() {
       >
         <div>
           {/* Eyebrow — subtle animation ok, not LCP */}
-          <div className="hero-animate mb-6 flex flex-wrap items-center gap-2.5" style={{ "--hero-delay": "100ms" } as React.CSSProperties}>
+          <div
+            className="hero-animate mb-6 flex flex-wrap items-center gap-2.5"
+            style={{ "--hero-delay": "100ms" } as React.CSSProperties}
+          >
             <span
               className={`
                 rounded bg-blue/[.18] px-[11px] py-1 font-mono text-[10px] font-medium tracking-[0.09em]
@@ -74,7 +77,7 @@ export function HeroSection() {
           <div className="hero-animate" style={{ "--hero-delay": "200ms" } as React.CSSProperties}>
             <p
               className={`
-                mb-9 max-w-[520px] text-[17px] leading-[1.76] font-light text-white/[.42]
+                mb-9 max-w-[520px] text-[17px] leading-[1.76] font-normal text-white/[.42]
                 max-md:max-w-full max-md:text-[15px]
                 max-sm:text-[13.5px]
               `}
@@ -86,7 +89,10 @@ export function HeroSection() {
           </div>
 
           {/* CTAs */}
-          <div className="hero-animate mb-10 flex flex-wrap gap-2.5 max-md:flex-col max-md:items-stretch" style={{ "--hero-delay": "350ms" } as React.CSSProperties}>
+          <div
+            className="hero-animate mb-10 flex flex-wrap gap-2.5 max-md:flex-col max-md:items-stretch"
+            style={{ "--hero-delay": "350ms" } as React.CSSProperties}
+          >
             <Button href="/CV_Cao_Dang_Tinh_Fullstack.pdf" variant="primary" download>
               <Download size={16} />
               Download CV
@@ -99,7 +105,7 @@ export function HeroSection() {
         </div>
 
         {/* Terminal Card */}
-        <HeroTerminal />
+        <HeroTerminalLazy />
       </div>
     </section>
   );

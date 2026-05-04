@@ -76,7 +76,7 @@ export function ContactSection() {
           </MotionHeroItem>
 
           <MotionHeroItem>
-            <p className="mb-12 max-w-[520px] text-[16.5px] leading-[1.74] font-light text-white/[.44]">
+            <p className="mb-12 max-w-[520px] text-[16.5px] leading-[1.74] font-normal text-white/[.44]">
               I&apos;m always open to discussing new projects, creative ideas, or opportunities to be
               part of your vision. Feel free to reach out through any channel below.
             </p>

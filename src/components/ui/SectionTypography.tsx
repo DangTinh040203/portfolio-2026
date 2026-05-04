@@ -48,7 +48,7 @@ export function SectionSubtitle({ children, white, className = "" }: SectionSubt
   return (
     <p
       className={`
-        mb-[52px] max-w-[560px] text-[16.5px] leading-[1.74] font-light
+        mb-[52px] max-w-[560px] text-[16.5px] leading-[1.74] font-normal
         max-md:mb-9 max-md:text-[15px]
         max-sm:mb-7 max-sm:text-sm
         ${white ? "text-white/[.44]" : "text-mid"}
